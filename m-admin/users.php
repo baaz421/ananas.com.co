@@ -56,13 +56,7 @@ include 'header.php';
 		          </div>
 		        </div>
 		        <div class="card-header d-flex align-items-center">
-		        	<?php 
-		        		$conn = mysqli_connect('localhost','root','','qegmolla') or die("Connection failed to DATABASE!");
-								$sql ="SELECT * FROM users";
-								$result =mysqli_query($conn,$sql) or die("Query failed..!");
-								$cou_rows_table_data = mysqli_num_rows($result);
-		        	?>
-		          <h3 class="h4">View all Users<span class="badge badge-secondary">Total - <?php echo $cou_rows_table_data; ?></span></h3>
+		        	<h3 class="h4">View all Users</h3>
 		        </div>
 		        <div class="card-body" id="table-data">
 		          <!-- ajax categories data table load here -->
